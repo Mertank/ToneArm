@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ServerEngine.cpp" />
+    <ClCompile Include="NetworkServer.cpp" />
+    <ClCompile Include="..\ToneArmEngine\BinaryFileResource.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\BoxShape.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\CachedResourceLoader.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\CollisionHelper.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\CylinderShape.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\Frustum.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\InitializationCategory.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\InitializationFileResource.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\InputModule.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\LevelResource.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\Log.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\MathHelper.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\PathUtils.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\RayCasting.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\Resource.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\Shape.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\SystemInfo.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\Transform.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="PickableBuffSS.cpp" />
+    <ClCompile Include="..\ToneArmEngine\FileManager.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerEntity.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="PlayerMapHelper.cpp" />
+    <ClCompile Include="CharacterController.cpp" />
+    <ClCompile Include="ShootingHelperMP.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="CoreGameMode.cpp">
+      <Filter>gm</Filter>
+    </ClCompile>
+    <ClCompile Include="TDMGameMode.cpp">
+      <Filter>gm</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="WrapperGameMode.cpp">
+      <Filter>gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\PhysicsModule.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\BoxCollider.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\CylinderCollider.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\ColliderComponent.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\Component.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToneArmEngine\Trigger.cpp">
+      <Filter>engine refs</Filter>
+    </ClCompile>
+    <ClCompile Include="HeistTestGameMode.cpp">
+      <Filter>gm</Filter>
+    </ClCompile>
+    <ClCompile Include="PickableItemSS.cpp" />
+    <ClCompile Include="CharacterEntity.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponSS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ServerEngine.h" />
+    <ClInclude Include="NetworkServer.h" />
+    <ClInclude Include="UIDManager.h" />
+    <ClInclude Include="..\ToneArmEngine\BinaryFileResource.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\BoxShape.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\CachedResourceLoader.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\CollisionHelper.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\CylinderShape.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\Frustum.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\InitializationCategory.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\InitializationFileResource.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\InputModule.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\LevelResource.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\Log.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\MathHelper.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\PathUtils.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\RayCasting.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\Resource.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\RTTI.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\Shape.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\SpacePartitionTree.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\StringUtils.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\SystemInfo.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\Transform.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\VGSAssert.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\VGSMacro.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="PickableBuffSS.h" />
+    <ClInclude Include="..\ToneArmEngine\FileManager.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerEntity.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="PlayerMapHelper.h" />
+    <ClInclude Include="CharacterController.h" />
+    <ClInclude Include="ShootingHelperMP.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="CoreGameMode.h">
+      <Filter>gm</Filter>
+    </ClInclude>
+    <ClInclude Include="TDMGameMode.h">
+      <Filter>gm</Filter>
+    </ClInclude>
+    <ClInclude Include="WrapperGameMode.h">
+      <Filter>gm</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMode.h">
+      <Filter>gm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\CylinderCollider.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\PhysicsModule.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\BoxCollider.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\ColliderComponent.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\Component.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToneArmEngine\Trigger.h">
+      <Filter>engine refs</Filter>
+    </ClInclude>
+    <ClInclude Include="HeistTestGameMode.h">
+      <Filter>gm</Filter>
+    </ClInclude>
+    <ClInclude Include="PickableItemSS.h" />
+    <ClInclude Include="CharacterEntity.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponSS.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="engine refs">
+      <UniqueIdentifier>{0ac2d765-bf87-442e-811f-2687a92467a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entities">
+      <UniqueIdentifier>{a7c24b23-5db8-4de1-ac71-5ad191d9f9c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gm">
+      <UniqueIdentifier>{9930b0d3-8001-498b-aad2-23cb7a18f477}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

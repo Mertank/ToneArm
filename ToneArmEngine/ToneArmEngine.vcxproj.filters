@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CachedResourceLoader.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="PathUtils.cpp" />
+    <ClCompile Include="SystemInfo.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="RenderModule.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLRenderModule.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLProgram.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLProgramManager.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderable.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLMesh.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIManager.cpp">
+      <Filter>graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUILayer.cpp">
+      <Filter>graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableModel.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableMesh.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializationCategory.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshHelper.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLModel.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryFileResource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializationFileResource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelResource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFileResource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugConsoleModule.cpp">
+      <Filter>graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugGUILayer.cpp">
+      <Filter>graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgramsFileResource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelNode.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBed.cpp" />
+    <ClCompile Include="OpenGLTexture.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraProjectionData.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeLookCamera.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLMaterial.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessUtils.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="MathHelper.cpp" />
+    <ClCompile Include="FixedCamera.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="LANMenu.cpp">
+      <Filter>graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerInfo.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="RayCasting.cpp" />
+    <ClCompile Include="OpenGLBufferData.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxShape.cpp">
+      <Filter>collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider.cpp">
+      <Filter>collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderShape.cpp">
+      <Filter>collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderCollider.cpp">
+      <Filter>collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="RunningInfo.cpp" />
+    <ClCompile Include="LevelResource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLDynamicMesh.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionHelper.cpp">
+      <Filter>collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelNode.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\TankCharacter.cpp">
+      <Filter>Merrymen\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="Shape.cpp">
+      <Filter>collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\GameSceneGUI.cpp">
+      <Filter>Merrymen\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicModelNode.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassSelectionGUI.cpp">
+      <Filter>Merrymen\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPass.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLGUIPass.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="RelativeGUILayer.cpp">
+      <Filter>graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMessages.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallBlockAllocator.cpp" />
+    <ClCompile Include="stb_image_aug.c">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationNode.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="..\Merrymen\SniperCharacter.cpp">
+      <Filter>Merrymen\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLAnimator.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundResource.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLParticleEmitter.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitter.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitterNode.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="RSync.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="RenderableNode.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitterNodePool.cpp" />
+    <ClCompile Include="AnimationFrameCalculator.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UICommand.cpp">
+      <Filter>graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundModule.cpp" />
+    <ClCompile Include="InputModule.cpp" />
+    <ClCompile Include="OpenGLBasicPass.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundInfoGUI.cpp">
+      <Filter>Merrymen\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreTableGUI.cpp">
+      <Filter>Merrymen\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\GameScene.cpp">
+      <Filter>Merrymen\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationTestScene.cpp">
+      <Filter>Merrymen\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\MultiplayerGameScene.cpp">
+      <Filter>Merrymen\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\SinglePlayerGameScene.cpp">
+      <Filter>Merrymen\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\MainMenuScene.cpp">
+      <Filter>Merrymen\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\MainMenuGUI.cpp">
+      <Filter>Merrymen\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\PauseGUI.cpp">
+      <Filter>Merrymen\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\CompassNode.cpp">
+      <Filter>Merrymen</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLTransparencyPass.cpp">
+      <Filter>graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHandler.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkClient.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkModule.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\FogOfWarNode.cpp">
+      <Filter>Merrymen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\FogOfWarPass.cpp">
+      <Filter>Merrymen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\PickableBuffCS.cpp">
+      <Filter>Merrymen</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkNode.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="FSMComponent.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\IdleState.cpp">
+      <Filter>Merrymen\animations</Filter>
+    </ClCompile>
+    <ClCompile Include="FSMState.cpp" />
+    <ClCompile Include="..\Merrymen\ClientEntity.cpp">
+      <Filter>Merrymen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\TeamDeathMatchMH.cpp">
+      <Filter>Merrymen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\ShootingHelperSP.cpp">
+      <Filter>Merrymen\weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderComponent.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsModule.cpp" />
+    <ClCompile Include="Trigger.cpp">
+      <Filter>collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\PickableItemCS.cpp">
+      <Filter>Merrymen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\Character.cpp">
+      <Filter>Merrymen\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Merrymen\WeaponCS.cpp">
+      <Filter>Merrymen\weapons</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CachedResourceLoader.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineModule.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="PathUtils.h" />
+    <ClInclude Include="SystemInfo.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="VGSAssert.h" />
+    <ClInclude Include="VGSMacro.h" />
+    <ClInclude Include="StringUtils.h" />
+    <ClInclude Include="RenderModule.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLRenderModule.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLProgram.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLProgramManager.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image_aug.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="stbi_DDS_aug.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="stbi_DDS_aug_c.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLRendererSettings.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshStructs.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLMesh.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIManager.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUILayer.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ResizableMessagePool.h" />
+    <ClInclude Include="RenderMessages.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableModel.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RTTI.h" />
+    <ClInclude Include="RenderableMesh.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializationCategory.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshHelper.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLModel.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryFileResource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializationFileResource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelResource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFileResource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugConsoleModule.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGUILayer.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgramsFileResource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelNode.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLTexture.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraProjectionData.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeLookCamera.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLMaterial.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessUtils.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedCamera.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="LANMenu.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerInfo.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="RayCasting.h" />
+    <ClInclude Include="OpenGLBufferData.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="MessagePoolManager.h" />
+    <ClInclude Include="BoxShape.h">
+      <Filter>collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider.h">
+      <Filter>collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderShape.h">
+      <Filter>collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderCollider.h">
+      <Filter>collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="RunningInfo.h" />
+    <ClInclude Include="LevelResource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLDynamicMesh.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionHelper.h">
+      <Filter>collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelNode.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\TankCharacter.h">
+      <Filter>Merrymen\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="Shape.h">
+      <Filter>collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicModelNode.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassSelectionGUI.h">
+      <Filter>Merrymen\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPass.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLGUIPass.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugCommand.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="RelativeGUILayer.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="SpacePartitionTree.h" />
+    <ClInclude Include="SmallBlockAllocator.h" />
+    <ClInclude Include="GUIMessages.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationNode.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\MerrymenMacro.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\SniperCharacter.h">
+      <Filter>Merrymen\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationStructs.h" />
+    <ClInclude Include="Animator.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLAnimator.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundResource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLParticleEmitter.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitter.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitterNode.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="RSync.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="RenderableNode.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitterNodePool.h" />
+    <ClInclude Include="AnimationFrameCalculator.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="UICommand.h">
+      <Filter>graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundModule.h" />
+    <ClInclude Include="InputModule.h" />
+    <ClInclude Include="OpenGLBasicPass.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\GameSceneGUI.h">
+      <Filter>Merrymen\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundInfoGUI.h">
+      <Filter>Merrymen\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreTableGUI.h">
+      <Filter>Merrymen\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\GameScene.h">
+      <Filter>Merrymen\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationTestScene.h">
+      <Filter>Merrymen\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\MultiplayerGameScene.h">
+      <Filter>Merrymen\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\SinglePlayerGameScene.h">
+      <Filter>Merrymen\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\MainMenuScene.h">
+      <Filter>Merrymen\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\MainMenuGUI.h">
+      <Filter>Merrymen\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\PauseGUI.h">
+      <Filter>Merrymen\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\CompassNode.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLTransparencyPass.h">
+      <Filter>graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageHandler.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkClient.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkModule.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\CustomRenderPasses.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\FogOfWarNode.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\FogOfWarPass.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\PickableBuffCS.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkNode.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="FSMComponent.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\IdleState.h">
+      <Filter>Merrymen\animations</Filter>
+    </ClInclude>
+    <ClInclude Include="FSMState.h" />
+    <ClInclude Include="..\Merrymen\ClientEntity.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\TeamDeathMatchMH.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\ShootingHelperSP.h">
+      <Filter>Merrymen\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderComponent.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsModule.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="Trigger.h">
+      <Filter>collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\PickableItemCS.h">
+      <Filter>Merrymen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\Character.h">
+      <Filter>Merrymen\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Merrymen\WeaponCS.h">
+      <Filter>Merrymen\weapons</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{1ed4c33e-e9ff-484c-b252-635ad0c4d8c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\OpenGL">
+      <UniqueIdentifier>{1b5fc94f-1e33-45b5-bef0-e4bce14a9a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\GUI">
+      <UniqueIdentifier>{a25c2640-ffa6-4c5a-b317-4b6c8d5840d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{e27cb859-110b-4690-8288-a31938e60183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Merrymen">
+      <UniqueIdentifier>{c2de2a69-edd9-4ac5-a2d1-10dc98916448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{e457f259-566c-4768-b9a3-e2b212b11c37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="collisions">
+      <UniqueIdentifier>{c026609b-d903-4bb9-822f-f4daa222e50f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nodes">
+      <UniqueIdentifier>{ad57b8bd-16a2-42fd-b923-85661d2c2ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Merrymen\characters">
+      <UniqueIdentifier>{28f48d2f-c9ae-4157-84d3-2151231ddb65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Merrymen\gui">
+      <UniqueIdentifier>{1a4d4d71-361b-4c66-bcf8-2096a55ece2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Merrymen\scenes">
+      <UniqueIdentifier>{6dab91d6-6560-48c7-a320-c1a5e17fe450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Merrymen\weapons">
+      <UniqueIdentifier>{1be53f3b-a1b4-4453-9ae7-544017e70a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{d53ea2e8-dd76-450e-905f-5d1e6468878f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Merrymen\animations">
+      <UniqueIdentifier>{ca50a9b6-cc11-4fd5-922e-e0ec13dfb75a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

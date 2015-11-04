@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DA51B752-95FF-4DF6-8999-5378C9BC93D4}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>sfgui</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\sdk\SFGUI-0.2.3\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sfgui.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sfgui-d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\sdk\SFGUI-0.2.3\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sfgui.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sfgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\sdk\SFGUI-0.2.3\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sfgui.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sfgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\sdk\SFGUI-0.2.3\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sfgui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sfgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR="Debug";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR=\"Debug\";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-graphics-d.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-window-d.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-system-d.lib;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\lib\Release\Win32\glew32s.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/sdk/SFGUI-0.2.3/build/Debug/sfgui-d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/sdk/SFGUI-0.2.3/build/Debug/sfgui-d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR="Release";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR=\"Release\";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-graphics.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-system.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-system.lib;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\lib\Release\Win32\glew32s.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/sdk/SFGUI-0.2.3/build/Release/sfgui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/sdk/SFGUI-0.2.3/build/Release/sfgui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR="MinSizeRel";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR=\"MinSizeRel\";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-graphics.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-system.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-system.lib;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\lib\Release\Win32\glew32s.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/sdk/SFGUI-0.2.3/build/MinSizeRel/sfgui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/sdk/SFGUI-0.2.3/build/MinSizeRel/sfgui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR="RelWithDebInfo";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;SFGUI_INCLUDE_FONT;WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";SFGUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\sdk\SFGUI-0.2.3\include;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\include;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\include;C:\sdk\SFGUI-0.2.3\extlibs\libELL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-graphics.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-system.lib;C:\Vinyl Games\Sheridan College\libs\SFML-2.1\lib\sfml-system.lib;C:\Vinyl Games\Sheridan College\libs\glew-1.10.0\lib\Release\Win32\glew32s.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/sdk/SFGUI-0.2.3/build/RelWithDebInfo/sfgui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/sdk/SFGUI-0.2.3/build/RelWithDebInfo/sfgui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/sdk/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/sdk/SFGUI-0.2.3 -BC:/sdk/SFGUI-0.2.3/build --check-stamp-file C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/sdk/SFGUI-0.2.3/CMakeLists.txt;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/sdk/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/sdk/SFGUI-0.2.3 -BC:/sdk/SFGUI-0.2.3/build --check-stamp-file C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/sdk/SFGUI-0.2.3/CMakeLists.txt;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/sdk/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/sdk/SFGUI-0.2.3 -BC:/sdk/SFGUI-0.2.3/build --check-stamp-file C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/sdk/SFGUI-0.2.3/CMakeLists.txt;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/sdk/SFGUI-0.2.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/sdk/SFGUI-0.2.3 -BC:/sdk/SFGUI-0.2.3/build --check-stamp-file C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/sdk/SFGUI-0.2.3/CMakeLists.txt;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\sdk\SFGUI-0.2.3\build\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGLEW.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindSFML.cmake;C:\sdk\SFGUI-0.2.3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\sdk\SFGUI-0.2.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\SFGUI\Adjustment.hpp" />
+    <ClInclude Include="..\include\SFGUI\Alignment.hpp" />
+    <ClInclude Include="..\include\SFGUI\Bin.hpp" />
+    <ClInclude Include="..\include\SFGUI\Box.hpp" />
+    <ClInclude Include="..\include\SFGUI\Button.hpp" />
+    <ClInclude Include="..\include\SFGUI\Canvas.hpp" />
+    <ClInclude Include="..\include\SFGUI\CheckButton.hpp" />
+    <ClInclude Include="..\include\SFGUI\ComboBox.hpp" />
+    <ClInclude Include="..\include\SFGUI\Config.hpp" />
+    <ClInclude Include="..\include\SFGUI\Container.hpp" />
+    <ClInclude Include="..\include\SFGUI\Context.hpp" />
+    <ClInclude Include="..\include\SFGUI\DejaVuSansFont.hpp" />
+    <ClInclude Include="..\include\SFGUI\Desktop.hpp" />
+    <ClInclude Include="..\include\SFGUI\Desktop.inl" />
+    <ClInclude Include="..\include\SFGUI\Engine.hpp" />
+    <ClInclude Include="..\include\SFGUI\Engine.inl" />
+    <ClInclude Include="..\include\SFGUI\Engines\BREW.hpp" />
+    <ClInclude Include="..\include\SFGUI\Entry.hpp" />
+    <ClInclude Include="..\include\SFGUI\FileResourceLoader.hpp" />
+    <ClInclude Include="..\include\SFGUI\Fixed.hpp" />
+    <ClInclude Include="..\include\SFGUI\Frame.hpp" />
+    <ClInclude Include="..\include\SFGUI\Image.hpp" />
+    <ClInclude Include="..\include\SFGUI\Label.hpp" />
+    <ClInclude Include="..\include\SFGUI\Misc.hpp" />
+    <ClInclude Include="..\include\SFGUI\Notebook.hpp" />
+    <ClInclude Include="..\include\SFGUI\Object.hpp" />
+    <ClInclude Include="..\include\SFGUI\Parsers\ThemeParser\Grammar.hpp" />
+    <ClInclude Include="..\include\SFGUI\Parsers\ThemeParser\Parse.hpp" />
+    <ClInclude Include="..\include\SFGUI\Primitive.hpp" />
+    <ClInclude Include="..\include\SFGUI\ProgressBar.hpp" />
+    <ClInclude Include="..\include\SFGUI\RadioButton.hpp" />
+    <ClInclude Include="..\include\SFGUI\Range.hpp" />
+    <ClInclude Include="..\include\SFGUI\RenderQueue.hpp" />
+    <ClInclude Include="..\include\SFGUI\Renderer.hpp" />
+    <ClInclude Include="..\include\SFGUI\RendererViewport.hpp" />
+    <ClInclude Include="..\include\SFGUI\Renderers\VertexArrayRenderer.hpp" />
+    <ClInclude Include="..\include\SFGUI\Renderers\VertexBufferRenderer.hpp" />
+    <ClInclude Include="..\include\SFGUI\ResourceLoader.hpp" />
+    <ClInclude Include="..\include\SFGUI\ResourceManager.hpp" />
+    <ClInclude Include="..\include\SFGUI\ResourceManager.inl" />
+    <ClInclude Include="..\include\SFGUI\SFGUI.hpp" />
+    <ClInclude Include="..\include\SFGUI\Scale.hpp" />
+    <ClInclude Include="..\include\SFGUI\Scrollbar.hpp" />
+    <ClInclude Include="..\include\SFGUI\ScrolledWindow.hpp" />
+    <ClInclude Include="..\include\SFGUI\Selector.hpp" />
+    <ClInclude Include="..\include\SFGUI\Separator.hpp" />
+    <ClInclude Include="..\include\SFGUI\Signal.hpp" />
+    <ClInclude Include="..\include\SFGUI\SpinButton.hpp" />
+    <ClInclude Include="..\include\SFGUI\Spinner.hpp" />
+    <ClInclude Include="..\include\SFGUI\Table.hpp" />
+    <ClInclude Include="..\include\SFGUI\TableCell.hpp" />
+    <ClInclude Include="..\include\SFGUI\TableOptions.hpp" />
+    <ClInclude Include="..\include\SFGUI\ToggleButton.hpp" />
+    <ClInclude Include="..\include\SFGUI\Viewport.hpp" />
+    <ClInclude Include="..\include\SFGUI\Widget.hpp" />
+    <ClInclude Include="..\include\SFGUI\Window.hpp" />
+    <ClCompile Include="..\src\SFGUI\Adjustment.cpp" />
+    <ClCompile Include="..\src\SFGUI\Alignment.cpp" />
+    <ClCompile Include="..\src\SFGUI\Bin.cpp" />
+    <ClCompile Include="..\src\SFGUI\Box.cpp" />
+    <ClCompile Include="..\src\SFGUI\Button.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Button.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Canvas.cpp" />
+    <ClCompile Include="..\src\SFGUI\CheckButton.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/CheckButton.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\ComboBox.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/ComboBox.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Container.cpp" />
+    <ClCompile Include="..\src\SFGUI\Context.cpp" />
+    <ClCompile Include="..\src\SFGUI\Desktop.cpp" />
+    <ClCompile Include="..\src\SFGUI\Engine.cpp" />
+    <ClCompile Include="..\src\SFGUI\Engines\BREW.cpp" />
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Button.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Button.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\CheckButton.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/CheckButton.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\ComboBox.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/ComboBox.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Entry.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Entry.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Frame.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Frame.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Image.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Image.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Label.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Label.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Notebook.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Notebook.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\ProgressBar.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/ProgressBar.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Scale.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Scale.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Scrollbar.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Scrollbar.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\ScrolledWindow.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/ScrolledWindow.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Separator.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Separator.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\SpinButton.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/SpinButton.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Spinner.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Spinner.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\ToggleButton.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/ToggleButton.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Engines\BREW\Window.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Engines/BREW/Window.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Entry.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Entry.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\FileResourceLoader.cpp" />
+    <ClCompile Include="..\src\SFGUI\Fixed.cpp" />
+    <ClCompile Include="..\src\SFGUI\Frame.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Frame.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Image.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Image.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Label.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Label.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Misc.cpp" />
+    <ClCompile Include="..\src\SFGUI\Notebook.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Notebook.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Object.cpp" />
+    <ClCompile Include="..\src\SFGUI\Parsers\ThemeParser\Grammar.cpp" />
+    <ClCompile Include="..\src\SFGUI\Parsers\ThemeParser\GrammarPredicates.cpp" />
+    <ClCompile Include="..\src\SFGUI\Parsers\ThemeParser\GrammarSelector.cpp" />
+    <ClCompile Include="..\src\SFGUI\Parsers\ThemeParser\GrammarSimpleSelector.cpp" />
+    <ClCompile Include="..\src\SFGUI\Parsers\ThemeParser\GrammarStatement.cpp" />
+    <ClCompile Include="..\src\SFGUI\Parsers\ThemeParser\GrammarToken.cpp" />
+    <ClCompile Include="..\src\SFGUI\Parsers\ThemeParser\Parse.cpp" />
+    <ClCompile Include="..\src\SFGUI\Primitive.cpp" />
+    <ClCompile Include="..\src\SFGUI\ProgressBar.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/ProgressBar.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\RadioButton.cpp" />
+    <ClCompile Include="..\src\SFGUI\Range.cpp" />
+    <ClCompile Include="..\src\SFGUI\RenderQueue.cpp" />
+    <ClCompile Include="..\src\SFGUI\Renderer.cpp" />
+    <ClCompile Include="..\src\SFGUI\RendererViewport.cpp" />
+    <ClCompile Include="..\src\SFGUI\Renderers\VertexArrayRenderer.cpp" />
+    <ClCompile Include="..\src\SFGUI\Renderers\VertexBufferRenderer.cpp" />
+    <ClCompile Include="..\src\SFGUI\ResourceLoader.cpp" />
+    <ClCompile Include="..\src\SFGUI\ResourceManager.cpp" />
+    <ClCompile Include="..\src\SFGUI\SFGUI.cpp" />
+    <ClCompile Include="..\src\SFGUI\Scale.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Scale.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Scrollbar.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Scrollbar.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\ScrolledWindow.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/ScrolledWindow.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Selector.cpp" />
+    <ClCompile Include="..\src\SFGUI\Separator.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Separator.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Signal.cpp" />
+    <ClCompile Include="..\src\SFGUI\SpinButton.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/SpinButton.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Spinner.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Spinner.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Table.cpp" />
+    <ClCompile Include="..\src\SFGUI\TableCell.cpp" />
+    <ClCompile Include="..\src\SFGUI\TableOptions.cpp" />
+    <ClCompile Include="..\src\SFGUI\ToggleButton.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/ToggleButton.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\Viewport.cpp" />
+    <ClCompile Include="..\src\SFGUI\Widget.cpp" />
+    <ClCompile Include="..\src\SFGUI\Window.cpp">
+      <ObjectFileName>$(IntDir)/src/SFGUI/Window.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\SFGUI\DejaVuSansFont.cpp" />
+    <None Include="..\include\SFGUI\Parsers\ThemeParser" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/sdk/SFGUI-0.2.3/build/ZERO_CHECK.vcxproj">
+      <Project>244DD16B-0551-4B7F-880B-2B0DEBBEB7FB</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

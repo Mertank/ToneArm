@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Damage.cpp">
+      <Filter>gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectileStats.cpp">
+      <Filter>gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats.cpp">
+      <Filter>gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="PickableItem.cpp">
+      <Filter>gameplay</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharacterStats.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Damage.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="PickableItem.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectileStats.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponStats.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="NetConsts.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkMessageIDs.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootingHelper.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Modular.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats.h">
+      <Filter>gameplay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="gameplay">
+      <UniqueIdentifier>{0c4bbaf3-650d-47ec-b674-9686c21b4de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{06b25ea9-5889-465f-b003-e2f02e2d0ede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{39eb657b-9bc4-4f81-b3c9-71e0de4ecc88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

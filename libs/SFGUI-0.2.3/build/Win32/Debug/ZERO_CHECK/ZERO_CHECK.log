@@ -1,0 +1,14 @@
+﻿Build started 6/2/2014 6:07:15 PM.
+     1>Project "C:\Vinyl Games\Sheridan College\libs\SFGUI-0.2.3\build\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake is re-running because generate.stamp.list is missing.
+         -- Found SFML 2.1 in C:/Vinyl Games/Sheridan College/libs/SFML-2.1/include
+         -- Configuring done
+         -- Generating done
+         -- Build files have been written to: C:/sdk/SFGUI-0.2.3/build
+     1>Done Building Project "C:\Vinyl Games\Sheridan College\libs\SFGUI-0.2.3\build\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.36

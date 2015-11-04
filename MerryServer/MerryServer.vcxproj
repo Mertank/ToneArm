@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RemoteDebug|Win32">
+      <Configuration>RemoteDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ToneArmEngine\BinaryFileResource.cpp" />
+    <ClCompile Include="..\ToneArmEngine\BoxCollider.cpp" />
+    <ClCompile Include="..\ToneArmEngine\BoxShape.cpp" />
+    <ClCompile Include="..\ToneArmEngine\CachedResourceLoader.cpp" />
+    <ClCompile Include="..\ToneArmEngine\ColliderComponent.cpp" />
+    <ClCompile Include="..\ToneArmEngine\CollisionHelper.cpp" />
+    <ClCompile Include="..\ToneArmEngine\Component.cpp" />
+    <ClCompile Include="..\ToneArmEngine\CylinderCollider.cpp" />
+    <ClCompile Include="..\ToneArmEngine\CylinderShape.cpp" />
+    <ClCompile Include="..\ToneArmEngine\FileManager.cpp" />
+    <ClCompile Include="..\ToneArmEngine\Frustum.cpp" />
+    <ClCompile Include="..\ToneArmEngine\InitializationCategory.cpp" />
+    <ClCompile Include="..\ToneArmEngine\InitializationFileResource.cpp" />
+    <ClCompile Include="..\ToneArmEngine\InputModule.cpp" />
+    <ClCompile Include="..\ToneArmEngine\LevelResource.cpp" />
+    <ClCompile Include="..\ToneArmEngine\Log.cpp" />
+    <ClCompile Include="..\ToneArmEngine\MathHelper.cpp" />
+    <ClCompile Include="..\ToneArmEngine\PathUtils.cpp" />
+    <ClCompile Include="..\ToneArmEngine\PhysicsModule.cpp" />
+    <ClCompile Include="..\ToneArmEngine\RayCasting.cpp" />
+    <ClCompile Include="..\ToneArmEngine\Resource.cpp" />
+    <ClCompile Include="..\ToneArmEngine\Shape.cpp" />
+    <ClCompile Include="..\ToneArmEngine\SystemInfo.cpp" />
+    <ClCompile Include="..\ToneArmEngine\Transform.cpp" />
+    <ClCompile Include="..\ToneArmEngine\Trigger.cpp" />
+    <ClCompile Include="CharacterController.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="CoreGameMode.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="HeistTestGameMode.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PickableItemSS.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="WrapperGameMode.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="GameWorld.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="NetworkServer.cpp" />
+    <ClCompile Include="PickableBuffSS.cpp" />
+    <ClCompile Include="CharacterEntity.cpp" />
+    <ClCompile Include="Player.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PlayerMapHelper.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ServerEngine.cpp" />
+    <ClCompile Include="ServerEntity.cpp" />
+    <ClCompile Include="ShootingHelperMP.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="TDMGameMode.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="WeaponSS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ToneArmEngine\BinaryFileResource.h" />
+    <ClInclude Include="..\ToneArmEngine\BoxCollider.h" />
+    <ClInclude Include="..\ToneArmEngine\BoxShape.h" />
+    <ClInclude Include="..\ToneArmEngine\CachedResourceLoader.h" />
+    <ClInclude Include="..\ToneArmEngine\ColliderComponent.h" />
+    <ClInclude Include="..\ToneArmEngine\CollisionHelper.h" />
+    <ClInclude Include="..\ToneArmEngine\Component.h" />
+    <ClInclude Include="..\ToneArmEngine\CylinderCollider.h" />
+    <ClInclude Include="..\ToneArmEngine\CylinderShape.h" />
+    <ClInclude Include="..\ToneArmEngine\FileManager.h" />
+    <ClInclude Include="..\ToneArmEngine\Frustum.h" />
+    <ClInclude Include="..\ToneArmEngine\InitializationCategory.h" />
+    <ClInclude Include="..\ToneArmEngine\InitializationFileResource.h" />
+    <ClInclude Include="..\ToneArmEngine\InputModule.h" />
+    <ClInclude Include="..\ToneArmEngine\LevelResource.h" />
+    <ClInclude Include="..\ToneArmEngine\Log.h" />
+    <ClInclude Include="..\ToneArmEngine\MathHelper.h" />
+    <ClInclude Include="..\ToneArmEngine\PathUtils.h" />
+    <ClInclude Include="..\ToneArmEngine\PhysicsModule.h" />
+    <ClInclude Include="..\ToneArmEngine\RayCasting.h" />
+    <ClInclude Include="..\ToneArmEngine\Resource.h" />
+    <ClInclude Include="..\ToneArmEngine\RTTI.h" />
+    <ClInclude Include="..\ToneArmEngine\Shape.h" />
+    <ClInclude Include="..\ToneArmEngine\SpacePartitionTree.h" />
+    <ClInclude Include="..\ToneArmEngine\StringUtils.h" />
+    <ClInclude Include="..\ToneArmEngine\SystemInfo.h" />
+    <ClInclude Include="..\ToneArmEngine\Transform.h" />
+    <ClInclude Include="..\ToneArmEngine\Trigger.h" />
+    <ClInclude Include="..\ToneArmEngine\VGSAssert.h" />
+    <ClInclude Include="..\ToneArmEngine\VGSMacro.h" />
+    <ClInclude Include="CharacterController.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="CoreGameMode.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HeistTestGameMode.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PickableItemSS.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="WrapperGameMode.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="GameMode.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="GameWorld.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="NetworkServer.h" />
+    <ClInclude Include="PickableBuffSS.h" />
+    <ClInclude Include="CharacterEntity.h" />
+    <ClInclude Include="Player.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="PlayerMapHelper.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ServerEngine.h" />
+    <ClInclude Include="ServerEntity.h" />
+    <ClInclude Include="ShootingHelperMP.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="TDMGameMode.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="UIDManager.h" />
+    <ClInclude Include="WeaponSS.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D2E60EC-0187-4494-BB2E-82BD22AAE323}</ProjectGuid>
+    <RootNamespace>MerryServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\libs\glm\;..\libs\glew-1.10.0\include;..\libs\SFML-2.1\include\;..\libs\SFGUI-0.2.3\include;..\libs\RakNet_PC-4.0802\Source;..\libs\ShinyProfiler\Shiny\include;..\libs\dirent\include;..\Shared Classes;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs\glew-1.10.0\lib\Debug\Win32;..\libs\SFML-2.1\lib\;..\libs\SFGUI-0.2.3\build\Debug;..\libs\RakNet_PC-4.0802\Lib;..\libs\ShinyProfiler\Shiny\lib\Debug;..\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">
+    <IncludePath>..\..\..\..\libs\RakNet_PC-4.0802\Source;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\..\libs\RakNet_PC-4.0802\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\libs\glm\;..\libs\glew-1.10.0\include;..\libs\SFML-2.1\include\;..\libs\SFGUI-0.2.3\include;..\libs\RakNet_PC-4.0802\Source;..\libs\ShinyProfiler\Shiny\include;..\libs\dirent\include;..\Shared Classes;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs\glew-1.10.0\lib\Release\Win32;..\libs\SFML-2.1\lib\;..\libs\SFGUI-0.2.3\build\Release;..\libs\RakNet_PC-4.0802\Lib;..\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>MERRY_SERVER;TONEARM_DEBUG;GLEW_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32sd.lib;sfml-audio-d.lib;sfml-main-d.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfgui-d.lib;websockets.lib;ws2_32.lib;RakNet_VS2008_LibStatic_Debug_Win32.lib;MerryShared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>SERVER;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>websockets.lib;ws2_32.lib;RakNet_VS2008_LibStatic_Debug_Win32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>MERRY_SERVER;GLEW_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;sfml-audio.lib;sfml-main.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfgui.lib;ws2_32.lib;websockets.lib;RakNet_VS2008_LibStatic_Release_Win32.lib;MerryShared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
